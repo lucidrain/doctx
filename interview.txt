@@ -1,0 +1,46 @@
+Kỹ năng phỏng vấn:
+Ngồi thẳng lưng, nhìn thẳng vào người phỏng vấn, tránh động tác thừa, hạn chế run, tinh thần tự tin 
+Nên mang giấy bút ghi lại câu hỏi khi 1 người đặt câu hỏi cho người khác
+Nếu người phỏng vấn sai thì tiếp nhận ý kiến sai, về tự tìm hiểu
+Nếu gặp phần nào không biết thì em chưa có trải nghiệm, em sẽ về tìm hiểu thêm (anh/chị có thể gợi ý, bổ sung thêm)
+Nếu phỏng vấn có 2 người: người đặt câu hỏi 80%, người còn lại: 20%
+Không nên nói công ty cũ theo hướng tiêu cực
+Câu hỏi hay gặp:
+- Giới thiệu về bản thân:
+Họ tên đầy đủ, tuổi, các ngôn ngữ lập trình đã học
+Rất mong nhận được sự góp ý từ anh (chị), mong muốn được làm việc
+- Tại sao chọn ngành nghề này?
+Nắm bắt thị trường, dần thích nghi với nó, có khả năng phát triển sau này
+- Điểm mạnh, điểm yếu:
+Điểm mạnh: làm thuật toán giỏi, nắm bắt được kiến thức tốt (theo bản tự đánh giá)
+Điểm yếu: khả năng giao tiếp kém
+- Định hướng trong 3 năm tới (3 - 5 năm) ? Lộ trình nghề nghiệp
+Muốn trở thành 1 developer web-backend chuyên nghiệp hơn, senior developer
+- Offer lương:
+Tự đánh giá năng lực bản thân theo khả năng (8 triệu), không nên theo tech
+- Đặt lại câu hỏi:
+Công nghệ hiện tại mà công ty đang sử dụng, có làm theo scrum không?
+Thời gian đi làm? cần mang máy tính cá nhân hay dùng máy tính công ty cấp
+Mail:
+- Nhận lời mời phỏng vấn:
+1 buổi nên nhận 1-2 buổi phỏng vấn
+Xác nhận thời gian tham gia
+Cảm ơn
+- Nhớ tên người phỏng vấn:
+Viết mail cảm ơn về buổi phỏng vấn
+- Từ chối: Không phù hợp với định hướng và kế hoạch phát triển của bản thân, có kế hoạch khác
+- Nhận việc:
+Cần hỏi thời gian, lương, yêu cầu trang phục, máy tính cá nhân
+CV ứng tuyển vị trí . . . - Họ tên
+Thời gian tối thiểu để nhảy việc: 6 tháng
+Nên đi sâu công nghệ hơn là đi rộng
+
+- Các câu hỏi kỹ thuật:
+- Web service, API (bảo mật)
+- Thiết kế CSDL
+- SQL
+- Cấu trúc dữ liệu và giải thuật
+- OOP và 4 tính chất
+- Đăng nhập bằng tài khoản mạng xã hội
+- Câu hỏi “tình huống”
+- Bài toán logic

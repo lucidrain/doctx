@@ -1,0 +1,32 @@
+/** COMMAND **/
+vue init webpack my-project || create project
+vue create my-project || create project
+npm update || update npm lib
+npm run dev
+npm list vue
+npm run serve
+vue --version
+npm uninstall -g vue-cli
+npm install -g @vue/cli
+
+/** CONFIG **/
+Babel, Router, vuex, Css pre-processors, Linter / Formatter (Typescript)
+Using history mode {to delete '#' in url vuejs}
+Sass/SCSS (with dart-sass)
+Eslint + Prettier
+Lint on save
+In dedicated config files
+Save as preset {to save custom config}
+editing file ~/.vuerc || To remove preset
+
+/** PUB **/
+vue add vuetify || vuetify
+npm install --save axios vue-axios || api
+vuex
+vuelidate
+vee-lidate
+vue-fragment
+
+/** CODE **/
+** vue-router
+vue-router {} [] (path:"", name:"", component:"", children:[{path:"", etc . . .}], meta:[{icon: ""}]

@@ -1,0 +1,10 @@
+/** PULL DEV **/
+ssh cuongdm@10.1.121.60
+su deploy (payon)
+cd /data /deployProject 
+
+/** TEST API_CORE_BACKEND **/
+10.5.97.9
+test in web-backend API_APP_URL=http://10.5.21.62:8807/api.php
+test in work from home API_APP_URL=http://10.5.97.9:8807/api.php
+default API_APP_URL=http://10.1.121.60:8807/api.php

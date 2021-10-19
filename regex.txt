@@ -1,0 +1,5 @@
+at most 1 character, not contain special characters, string with 5 characters (include character and number)
+/(?=^[^a-zA-Z]*[a-zA-Z]?[^a-zA-Z]*)([a-zA-Z0-9]{5})$/
+
+not contain special character
+/^[_A-z0-9]*((-|\s)*[_A-z0-9])*$/
