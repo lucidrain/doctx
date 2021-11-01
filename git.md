@@ -87,7 +87,7 @@
 ## git merge / commit ui
 **c=ctrl**
 |keyboard         |description         |command          |description       |
-|:----:           |:----:              |:----:           |:----:            |
+|:----:           |:----               |:----:           |:----             |
 |c-a              |beginning-of-line   |nul              |set-mark-command  |
 |c-e              |end-of-line         |tab              |set-insert-command|
 |c-b              |backward-char       |c-h              |help              |

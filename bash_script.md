@@ -1,3 +1,4 @@
+**Copy to .bashrc**
 ## disable-touchpad.sh
 ```
 #!/bin/bash

@@ -1,4 +1,9 @@
 ## file/folder_command
+> open file
+>
+> `xdg-open folder_name`
+
+
 `xdg-open` **folder_name** || *.*                           open file
 `cd` *file_path*                                            move to file 
 `rm -r -f || -rf` *file_path*                               remove file
