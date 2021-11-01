@@ -12,6 +12,12 @@
 >
 > `git pull origin name_branch`
 
+> push code
+>
+> `git push origin branch_name`
+>
+> `git push --set-upstream origin branch_name` - gitLab
+
 > create new branch
 >
 > `git checkout -b name_branch`
@@ -32,10 +38,6 @@
 >
 > `git merge name_branch`
 
-> get all branch
->
-> `git fetch`
-
 > see all branch
 >
 > `git branch`
@@ -51,30 +53,38 @@
 > delete local branch
 >
 > `git branch -d local_branch`
+>
 > `git branch -D local_branch` - force delete
-
-> open gitk
->
-> `gitk`
-
-> push code
->
-> `git push --set-upstream origin branch_name` - gitLab
-> `git push origin branch_name`
 
 > set remote url git
 >
 > `git remote set-url`
 
+> get all branch
+>
+> `git fetch`
+
 > reset to head
 >
 > `git reset --hard`
+
+> set global username & email
+>
+> `git config --global user.name "your_github_username"`
+>
+> `git config --global user.email "your_github_email"`
+>
+> `git config -l`
 
 > remove .git hindden file
 >
 > `rm -rf .git`
 
-# git merge / commit ui
+> open gitk
+>
+> `gitk`
+
+## git merge / commit ui
 **c=ctrl**
 - nul             set-mark-command
 - c-a             beginning-of-line
@@ -99,37 +109,42 @@
 - c-z             stop merge
 - c-x - c-c       save file
 
-# add PAT (Personal Access Token)
-Create Personal Access Token on GitHub
-From your GitHub account, go to Settings => Developer Settings => Personal Access Token => Generate New Token (Give your password) => Fillup the form => click Generate token => Copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta
+## add PAT (Personal Access Token)
+1. Create Personal Access Token on GitHub.
+- From your GitHub account, go to Settings/ Developer Settings/ Personal Access Token
+- Generate New Token (Give your password) => Fillup the form => click Generate token
+- Copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta
 
-For a Linux-based OS ⤴
-For Linux, you need to configure the local GIT client with a username and email address,
-
-$ git config --global user.name "your_github_username"
-$ git config --global user.email "your_github_email"
-$ git config -l
-Once GIT is configured, we can begin using it to access GitHub. Example:
-
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+2. For Linux-based OS, you need to configure the local GIT client with a username and email address.
+```
+git config --global user.name "your_github_username"
+git config --global user.email "your_github_email"
+git config -l
+```
+3. Once GIT is configured, we can begin using it to access GitHub. Example:
+```diff
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Cloning into `Spoon-Knife`...
-$ Username for 'https://github.com' : username
-$ Password for 'https://github.com' : give your personal access token here
+Username for 'https://github.com' : username
+Password for 'https://github.com' : give your personal access token here
+```
 Now cache the given record in your computer to remembers the token:
-
-$ git config --global credential.helper cache
+```diff
+git config --global credential.helper cache
+```
 If needed, anytime you can delete the cache record by:
-
-$ git config --global --unset credential.helper
-$ git config --system --unset credential.helper
+```diff
+git config --global --unset credential.helper
+git config --system --unset credential.helper
+```
 Now try to pull with -v to verify
-
-$ git pull -v
+```
+git pull -v
+```
 Linux/Debian (Clone as follows):
-
 git clone https://<tokenhere>@github.com/<user>/<repo>.git
 
-# setup ssh on gitlab
+## setup ssh on gitlab
 `ssh -v`                                                    check ssh version 
 `ssh-keygen -t ed25519 -c` **"<" comment ">"**              generate key ssh
 `ssh-keygen -t rsa -b 2048 -c` **"email@example.com"**      generate key rsa
