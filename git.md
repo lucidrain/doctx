@@ -1,7 +1,6 @@
 # GIT
 ## Examples
 > create local repository
->
 > `git init`
 
 > link your local repository and remote repository
