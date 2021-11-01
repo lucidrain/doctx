@@ -1,4 +1,16 @@
+<style>
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+</style>
 # GIT
+<code>
+hello-world
+</code>
 ## Examples
 > create local repository
 ```
