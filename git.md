@@ -137,13 +137,27 @@ Linux/Debian (Clone as follows):
 git clone https://<tokenhere>@github.com/<user>/<repo>.git
 
 ## setup ssh on gitlab
-`ssh -v`                                                    check ssh version 
-`ssh-keygen -t ed25519 -c` **"<" comment ">"**              generate key ssh
-`ssh-keygen -t rsa -b 2048 -c` **"email@example.com"**      generate key rsa
-`ssh-keygen -p -f` **/path/to/ssh_key**                     generate ssh key pair
-`xclip -sel clip <` **~/.ssh/id_ed25519.pub**               add ssh key to gitlab account
-*icon top right/settings/ssh keys*                          ssh setting 
-error fatal: unable to update url base from redirection {
-      solve: login with private company network
-in */home/cuong/.ssh/id_ed25519.pub*   add an ssh key
-}
+> check ssh version
+>
+> `ssh -v`
+
+> generate key ssh
+>
+> `ssh-keygen -t ed25519 -c` **"<" comment ">"**
+
+> generate key rsa
+>
+> `ssh-keygen -t rsa -b 2048 -c` **"email@example.com"**
+
+> generate ssh key pair
+>
+> `ssh-keygen -p -f` **/path/to/ssh_key**
+
+> add ssh key to gitlab account
+>
+> `xclip -sel clip <` **~/.ssh/id_ed25519.pub**
+
+- *profile/ settings/ ssh keys*
+ssh setting => error fatal: unable to update url base from redirection.
+solve: login with private company network.
+in */home/cuong/.ssh/id_ed25519.pub* => add an ssh key
