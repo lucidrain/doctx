@@ -1,46 +1,59 @@
 # GIT
 ## Examples
 > create local repository
-```git init
 ```
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
+git init
 ```
 
 > link your local repository and remote repository
-> ```git remote add origin url_remote_git```
+```
+git remote add origin url_remote_git
+```
 
 > pull code from remote
-> ```git pull origin name_branch```
+```
+git pull origin name_branch
+```
 
 > create new branch
-> ```git checkout -b name_branch```
+```
+git checkout -b name_branch
+```
 
 > checkout to existed branch
-> ```git checkout name_branch```
+```
+git checkout name_branch
+```
 
 > add file to local repository
-> ```git add file_path```
+```
+git add file_path
+```
 
 > add message
-> ```git commit -m "your_message"```
+```
+git commit -m "your_message"
+```
 
 > merge branch
-> ```git merge name_branch```
+```
+git merge name_branch
+```
 
 > get all branch
-> ```git fetch```
+```
+git fetch
+```
 
 > see all branch
-> ```git branch```
+```
+git branch
+```
 
 > check status
-> ```git status```
+```
+git status
+```
 
 # command
 `git init`                                            create local repository
