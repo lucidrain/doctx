@@ -1,3 +1,38 @@
+# GIT
+## Examples
+> create local repository
+> ```git init```
+
+> link your local repository and remote repository
+> ```git remote add origin url_remote_git```
+
+> pull code from remote
+> ```git pull origin name_branch```
+
+> create new branch
+> ```git checkout -b name_branch```
+
+> checkout to existed branch
+> ```git checkout name_branch```
+
+> add file to local repository
+> ```git add file_path```
+
+> add message
+> ```git commit -m "your_message"```
+
+> merge branch
+> ```git merge name_branch```
+
+> get all branch
+> ```git fetch```
+
+> see all branch
+> ```git branch```
+
+> check status
+> ```git status```
+
 # command
 `git init`                                            create local repository
 `git remote add origin` **url_remote_git**            link your local repository and remote repository

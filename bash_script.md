@@ -1,4 +1,5 @@
 ## disable-touchpad.sh
+```
 #!/bin/bash
 # Purpose: Toggle synaptic touchpad on/off
 # Author: Fazle Arefin
@@ -12,8 +13,9 @@ xinput set-prop "$TOUCHPADID" "Device Enabled" 1
 else 
 xinput set-prop "$TOUCHPADID" "Device Enabled" 0
 fi
-
+```
 ## add git branch to terminal
+```
 # Add git branch if its present to PS1
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -26,3 +28,4 @@ fi
 unset color_prompt force_color_prompt
 // set color 
 PS1="\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+```
