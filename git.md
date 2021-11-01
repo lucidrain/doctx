@@ -1,19 +1,12 @@
 # GIT
 ## Examples
-create local repository
-```diff
-- hello
-```
-´´´´Deprecated´´´´
 > create local repository
-```diff
-- git init
-```
+>
+> `git init`
 
 > link your local repository and remote repository
-```
-git remote add origin url_remote_git
-```
+>
+> `git remote add origin url_remote_git`
 
 > pull code from remote
 ```
