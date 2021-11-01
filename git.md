@@ -3,9 +3,16 @@
 > ![#1589F0] create local repository `#1589F0`
 ```
 git init
-```   
-> ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+```
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
 > link your local repository and remote repository
 > ```git remote add origin url_remote_git```
 
