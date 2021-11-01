@@ -1,21 +1,14 @@
 ## file/folder_command
-> open file
->
-> `xdg-open folder_name`
+|file = fi                      |description     |folder = fd          |description                       |
+|:----:                         |:----           |:----:               |:----                             |
+|`cp`                           |copy            |`xdg-open` fd_name   |open                              |
+|`rm -r -f` file_path           |remove          |`cd` fd_path         |move to workspace                 |
+|`mv` fi_old fi_new path_file   |move/change name|                     |                                  |
+|`touch`||`>` fi_name           |create new      |`mkdir -p` fd_name   |create new (-p = with relate path)|
+|`ll`                           |show detail     |`ls`                 |list fi in fd                     |
+|`pwd`                          |show relate path|                     |                                  |
+|`sudo chmod a+rwx` path/fi_name|change privilege|`sudo chmod -r 777 .`|give all privilege                |
 
-
-`xdg-open` **folder_name** || *.*                           open file
-`cd` *file_path*                                            move to file 
-`rm -r -f || -rf` *file_path*                               remove file
-`cp`                                                        copy file
-`mv` **old_name** **new_name** *path_file*                  move/change file name 
-`mkdir -p` **folder_name**                                  create folder (-p mean create relate path) 
-`touch || >` **file_name**                                  create file 
-`ls`                                                        list file in folder 
-`pwd`                                                       show relate path file 
-`ll`                                                        show detail of file 
-`sudo chmod a+rwx` **path/name_file**                       give permission to folder (r-w-x mean 'read-write-excute') 
-ex: `sudo chmod -r 777 .`                                   give all permission to file
 ## linux_command
 `sudo shutdown now`                                         shutdown computer
 `sudo reboot`                                               restart computer
