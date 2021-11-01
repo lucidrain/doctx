@@ -1,6 +1,6 @@
 # GIT
 ## Examples
-> create local repository
+> ![#1589F0] create local repository `#1589F0`
 ```
 git init
 ```   
