@@ -86,9 +86,23 @@
 
 ## git merge / commit ui
 **c=ctrl**
-- nul             set-mark-command
-- c-a             beginning-of-line
-- c-b             backward-char
+|     keyboard    |     description |     file        |     description |
+|:----:           |:----:           |:----:           |:----:           |
+|c-a              |beginning-of-line|nul              |set-mark-command |
+|c-b              |backward-char    |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+|                 |                 |                 |                 |
+
+
+- nul             
+-              
+-              
 - c-d             delete-char
 - c-e             end-of-line
 - c-f             forward-char
