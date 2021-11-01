@@ -1,11 +1,14 @@
 # GIT
 ## Examples
 > create local repository
+>
 > `git init`
 
 > link your local repository and remote repository
 >
-> `git remote add origin url_remote_git`
+```diff
+> - git remote add origin url_remote_git
+```
 
 > pull code from remote
 ```
