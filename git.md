@@ -6,76 +6,74 @@
 
 > link your local repository and remote repository
 >
-```diff
-> - git remote add origin url_remote_git
-```
+> `git remote add origin url_remote_git`
 
 > pull code from remote
-```
-git pull origin name_branch
-```
+>
+> `git pull origin name_branch`
 
 > create new branch
-```
-git checkout -b name_branch
-```
+>
+> `git checkout -b name_branch`
 
 > checkout to existed branch
-```
-git checkout name_branch
-```
+>
+> `git checkout name_branch`
 
 > add file to local repository
-```
-git add file_path
-```
+>
+> `git add file_path`
 
-> add message
-```
-git commit -m "your_message"
-```
+> add commit
+>
+> `git commit -m "your_message"`
 
 > merge branch
-```
-git merge name_branch
-```
+>
+> `git merge name_branch`
 
 > get all branch
-```
-git fetch
-```
+>
+> `git fetch`
 
 > see all branch
-```
-git branch
-```
+>
+> `git branch`
 
 > check status
-```
-git status
-```
+>
+> `git status`
 
-# command
-`git init`                                            create local repository
-`git remote add origin` **url_remote_git**            link your local repository and remote repository
-`git pull origin` **name_branch** || `git pull .`     pull on current branch
-`git checkout -b` **new_branch**                      create new branch
-`git check out` **name_branch**                       check out to branch
-`git add` **file_path** || `git add .`                add change file to local repository
-`git commit -m` **"message here"**                    add message which you change
-`git push origin` **name_branch**                     push code to remote repository
-`git merge` **name_branch**                           merge branch to current branch
-`git fetch`                                           get all branch to local
-`git branch`                                          see all git branchs
-`git status`                                          check status
-`git branch -d` **local_branch**                      delete local branch
-`git branch -D` **local_branch**                      force delete local branch
-`git push origin --delete` **remote_branch**          delete remote branch
-`gitk`                                                open gitk
-`git push --set-upstream origin` **name_branch**      push code to gitlab
-`git remote set-url`
-`git reset --hard`                                    reset to head
-`rm -rf .git`                                         remove .git hindden file
+> delete remote branch
+>
+> `git push origin --delete remote_branch`
+
+> delete local branch
+>
+> `git branch -d local_branch`
+> `git branch -D local_branch` - force delete
+
+> open gitk
+>
+> `gitk`
+
+> push code
+>
+> `git push --set-upstream origin branch_name` - gitLab
+> `git push origin branch_name`
+
+> set remote url git
+>
+> `git remote set-url`
+
+> reset to head
+>
+> `git reset --hard`
+
+> remove .git hindden file
+>
+> `rm -rf .git`
+
 # git merge / commit ui
 **c=ctrl**
 - nul             set-mark-command
