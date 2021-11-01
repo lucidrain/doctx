@@ -1,7 +1,9 @@
 # GIT
 ## Examples
 > create local repository
-> ```git init```
+```
+git init
+```   
 
 > link your local repository and remote repository
 > ```git remote add origin url_remote_git```
