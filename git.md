@@ -4,7 +4,8 @@
 ```
 git init
 ```   
-
+> ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
 > link your local repository and remote repository
 > ```git remote add origin url_remote_git```
 
