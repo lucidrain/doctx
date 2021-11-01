@@ -37,9 +37,10 @@ sudo apt install gnome-terminal
 ```
 
 - linux short_key:
-  > minimize left || right
-  >
-  > super + ->|| <-
+
+> minimize left || right
+>
+> super + ->|| <-
 
 > maximize screen
 >
