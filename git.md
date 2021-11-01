@@ -86,42 +86,20 @@
 
 ## git merge / commit ui
 **c=ctrl**
-|     keyboard    |     description |     file        |     description |
-|:----:           |:----:           |:----:           |:----:           |
-|c-a              |beginning-of-line|nul              |set-mark-command |
-|c-b              |backward-char    |                 |                 |
-|                 |                 |                 |                 |
-|                 |                 |                 |                 |
-|                 |                 |                 |                 |
-|                 |                 |                 |                 |
-|                 |                 |                 |                 |
-|                 |                 |                 |                 |
-|                 |                 |                 |                 |
-|                 |                 |                 |                 |
-
-
-- nul             
--              
--              
-- c-d             delete-char
-- c-e             end-of-line
-- c-f             forward-char
-- c-g             keyboard-quit
-- c-h             help
-- tab             self-insert-command
-- c-o             create new row below
-- c-j             create new row on top
-- c-r             move word backward
-- c-w             delete all
-- c-m             enter
-- c-i             tab
-- c-d             delete word
-- c-k             delete 1 row
-- c-x             go to each 2 rows
-- c-s             i-search
-- c-v             go to bot mode
-- c-z             stop merge
-- c-x - c-c       save file
+|keyboard         |description         |command          |description       |
+|:----:           |:----:              |:----:           |:----:            |
+|c-a              |beginning-of-line   |nul              |set-mark-command  |
+|c-e              |end-of-line         |tab              |set-insert-command|
+|c-b              |backward-char       |c-h              |help              |
+|c-r              |move word backward  |c-m              |enter             |
+|c-f              |forward-char        |c-i              |tab               |
+|c-x              |go to each 2 rows   |c-s              |i-search          |
+|c-d              |delete-char         |c-v              |go to bot mode    |
+|c-k              |delete 1 row        |c-z              |stop merge        |
+|c-w              |delete all          |c-x + c-c        |save file         |
+|c-o              |create new row below|                 |                  |
+|c-j              |create new row above|                 |                  |
+|c-g              |keyboard-quit       |                 |                  |
 
 ## add PAT (Personal Access Token)
 1. Create Personal Access Token on GitHub.
