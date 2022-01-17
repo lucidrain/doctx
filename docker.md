@@ -1,21 +1,53 @@
-# COMMAND
-`docker ps a`                                                    list all container running
-`docker images -a`                                               list all images
-`docker stop` **container_ID**                                   stop container
-`docker rmi` **image_name**                                      remove image
-`docker system prune -a`                                         delete all container stop & images 
-`docker logs f tail 20` **containerID**                          show log container
-`docker build .`                                                 build docker
-`docker start` **containerID**                                   start docker
-`docker compose` || *f dockercomposedev.yml* `up -d --build`      docker build image and setup
-`docker exec it` **container_ID** || `composer update` or bash   run docker excute and (update composer)
-`docker run d p` *port_run*:*port_listen* **name_image**
-`sudo groupadd docker`
-`sudo usermod aG docker` **$USER**
-`newgrp docker`
-`docker run` helloworld
-`reboot`
-`sudo chmod 666` **/var/run/docker.sock**                        error sudo docker
+# Docker
+## Examples
+> list all container
+>
+> `docker ps -a`
+
+> list all image
+>
+> `docker images -a`
+
+> stop container
+>
+> `docker stop` **container_ID**
+
+> remove image
+>
+> `docker rmi` **image_name**
+
+> delete all containers & images
+>
+> `docker system prune -a`
+
+> show log
+>
+> `docker logs f tail 20` **containerID**
+
+> build docker
+>
+> `docker build .`
+
+> start container
+>
+> `docker start` **containerID**
+
+> docker build
+>
+> `docker compose` || *f docker-compose-dev.yml* `up -d --build`
+
+> run docker
+>
+> `docker exec it` **container_ID** || `composer update`
+
+> `docker run d p` *port_run*:*port_listen* **name_image**
+
+> `sudo groupadd docker`
+> `sudo usermod aG docker` **$USER**
+> `newgrp docker`
+> `docker run` helloworld
+> `reboot`
+> `sudo chmod 666` **/var/run/docker.sock**                        error sudo docker
 
 /** Dockerfile Structure **/
 ** FROM

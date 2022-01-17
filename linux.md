@@ -78,6 +78,9 @@ _.bashrc_ config terminal (run bash script with alias, set go_path, config color
 - flameshot
 - keepass2
 - wine (install & use file .exe)
+```
+apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine
+```
 
 # chrome_ext
 
@@ -88,9 +91,13 @@ _.bashrc_ config terminal (run bash script with alias, set go_path, config color
 - chrome extension source viewer
 - new tab
 
-# chrome_command
+# chrome_short_key
 
 **c=ctrl**
+|short_key|description|
+|:-----|:------|
+|c + a|mark all word|
+|c + g| find in page|
 
 - c+a
 - c+d bookmark
