@@ -1,3 +1,5 @@
+# Linux
+
 ## file/folder_command
 
 | file = fi                       | description      | folder = fd           | description                        |
@@ -26,7 +28,7 @@
 
 - choose default terminal
 
-```
+```bash
 sudo update-alternatives --config x-terminal-emulator
 ```
 
