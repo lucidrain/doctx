@@ -1,13 +1,54 @@
-/** COMMAND **/
-SELECT user,authentication_string,plugin,host FROM mysql.user; || Display mysql user list
-create user 'name'@'localhost' identified by 'password'; || Create user & password
-grant all privileges on *.* to 'name@localhost'; || Cấp tất cả quyền cho user
-grant select, update, insert on databse.* to name@localhost; || Cấp quyền select, update, insert cho user
-show privileges; || Hiển thị danh sách quyền
-show grants for 'name'@'localhost'; || Hiển thị quyền cho user
-revoke insert on database.* from name@localhost; || Tước quyền user 
-revoke all privileges on *.* to 'name@localhost';  || Tước tất cả quyền user
-drop user 'name'@'localhost';  || Xóa user
+# Mysql
+
+- mysql workbench
+visit this page: [Donwload here](https://dev.mysql.com/downloads/workbench/)
+
+- phpmyadmin
+
+```bash
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+```
+
+- command
+
+show user list
+
+```mysql
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+```
+
+create user & password
+
+```mysql
+create user 'name'@'localhost' identified by 'password';
+```
+
+delete user
+
+```mysql
+drop user 'name'@'localhost';
+```
+
+grand permission to user
+
+```mysql
+grant all privileges on *.* to 'name@localhost';
+grant select, update, insert on databse.* to name@localhost;
+```
+
+revoke permission
+
+```mysql
+revoke all privileges on *.* to 'name@localhost';
+revoke insert on database.* from name@localhost;
+```
+
+show permission list
+
+```mysql
+show privileges;
+show grants for 'name'@'localhost';
+```
 
 /** CONFIG **/
 Change memory size import database:

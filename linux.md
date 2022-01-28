@@ -25,6 +25,8 @@
 | `gio trash --empty`                | clean trash         | `du -h` _/var/lib/snapd/snaps_     | check snap space       |
 | `sudo ./` \|\|`sh`\|\|`bash` fi.sh | run sh file         | `du -sh` _~/.cache/thumbnails_     | clear thumbnails cache |
 | `chmod +x` fi.sh                   | give excute sh file |                                    |                        |
+| `chown group_user:user project`    | update user folder  |                                    |                        |
+| `ll`                               | show privilege files|                                    |                        |
 
 - choose default terminal
 
@@ -34,7 +36,7 @@ sudo update-alternatives --config x-terminal-emulator
 
 - install gnome-terminal
 
-```
+```bash
 sudo apt install gnome-terminal
 ```
 
@@ -93,7 +95,7 @@ apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine
 - chrome extension source viewer
 - new tab
 
-# chrome_short_key
+## chrome_short_key
 
 **c=ctrl**
 |short_key|description|
@@ -125,7 +127,7 @@ apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine
 - c+shift+t undo delete tab (even close chrome)
 - c+shift+w close chrome
 
-/** postman **/
+/**postman**/
 choose bearer token -> paste bearer token
 body -> raw -> paste params -> code php - curl
 header -> content-type -> application/json
