@@ -166,8 +166,6 @@
         "workbench.colorCustomizations": {
             "editor.foreground": "#a9aab1"
         },
-        "editor.fontFamily": "Fira Code",
-        "editor.fontLigatures": true,
         "materialTheme.accent": "Remove accents",
         "files.autoSave": "afterDelay",
         "workbench.iconTheme": "vscode-icons",
@@ -268,6 +266,65 @@
 ## git
 
 [to the top](#to-the-top)
+
+- generate personal access token:
+- go toSettings/ Developer Settings/ Personal Access Token
+- generate New Token (Give your password) => Fillup the form => click Generate token
+- copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta, token = password
+
+1. commands
+
+    ```diff
+        git init
+        git remote add origin url_remote_git
+        git checkout -b name_branch
+        git checkout name_branch
+        git add file_path
+        git commit -m "your_message"
+        git push origin branch_name
+        git push --force branch_name
+        git push --set-upstream origin branch_name
+        git pull origin name_branch
+        git merge name_branch
+        git fetch
+        git branch
+        git status
+        git push origin --delete remote_branch
+        git branch -D local_branch
+        git remote set-url remote_url
+        git cherry-pick name_commit
+        git log
+        git reset --hard origin/branch_name
+        git config --global user.name "your_github_username"
+        git config --global user.email "your_github_email"
+        git config -l
+        gitk
+    ```
+
+2. git merge ui
+
+    | command | description      | command | description      |
+    |:-------:|:---------------- |:-------:|:---------------- |
+    |c-a      |beginning-of-line |nul      |set-mark-command  |
+    |c-e      |end-of-line       |tab      |set-insert-command|
+    |c-b      |backward-char     |c-h      |help              |
+    |c-r      |move word backward|c-m      |enter             |
+    |c-f      |forward-char      |c-i      |tab               |
+    |c-x      |go to each 2 rows |c-s      |i-search          |
+    |c-d      |delete-char       |c-v      |go to bot mode    |
+    |c-k      |delete 1 row      |c-z      |stop merge        |
+    |c-w      |delete all        |c-x + c-c|save file         |
+    |c-o      |create new row below| | |
+    |c-j      |create new row above| | |
+    |c-g      |keyboard-quit       | | |
+
+3. ssh
+
+    ```diff
+    ssh -v
+    ssh-keygen -t rsa -b 2048 -c user@gmail.com
+    > store in .ssh/github_personal.pub
+    ```
 
 ## mysql
 
