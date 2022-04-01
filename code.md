@@ -4,6 +4,7 @@
 - [vs_code](#vs_code)
 - [browser](#browser)
 - [git](#git)
+- [mysql](#mysql)
 - [laravel](#laravel)
 
 ---
@@ -77,10 +78,10 @@
 
 6. applications
 
-- wine: running exe file
-- flameshot: screenshot
-- keepass2: store username & password
-- mysql workbench
+    - wine: running exe file
+    - flameshot: screenshot
+    - keepass2: store username & password
+    - mysql workbench
 
 ## vs_code
 
@@ -111,16 +112,100 @@
     | `c+p`             | print page          |
     | `c+w`             | remove tab          |
 
-2. extension:
+2. chrome_ext:
 
     - trello card counter
     - Loom – Free Screen and Cam Recorder
     - Screencastify - Screen Video Recorder
+    - colorzilla
+    - vue.js devtools
+    - google docs offline
+    - google translate
+    - chrome extension source viewer
+    - new tab
+    - Responsive Viewer
 
 ### fire_fox
 
-1. extensions
+[to the top](#to-the-top)
+
+1. ff_ext
+
+    - multi-accounts container
 
 ## git
 
+[to the top](#to-the-top)
+
+## mysql
+
+[to the top](#to-the-top)
+
+1. install
+
+    ```batch
+    sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+    ```
+
+2. commands
+
+    ```batch
+    > action with database
+    show databse;
+    select database_name;
+    SELECT user,authentication_string,plugin,host FROM mysql.user;
+    create user 'name'@'localhost' identified by 'password';
+    drop user 'name'@'localhost';
+    > change privileges
+    grant all privileges on *.* to 'name@localhost';
+    grant select, update, insert on databse.* to name@localhost;
+    revoke all privileges on *.* to 'name@localhost';
+    revoke insert on database.* from name@localhost;
+    show privileges;
+    show grants for 'name'@'localhost';
+    ```
+
 ## laravel
+
+[to the top](#to-the-top)
+
+1. laradock
+
+    - config .env: php_version, composer_version, node_version, mysql_port
+    - config nginx/sites/laravel_example.conf
+
+    ```json
+    kurazushi.conf
+    server kurazushi.local
+    path: var/www/canly-kurazushi/public
+    ```
+
+    - config /etc/hosts:
+    `127.0.0.1  kurazushi.local`
+
+    - copy file.sql to ==mysql/docker-entrypoint-initdb.d== then import database
+    - commands
+
+    ```batch
+    docker-compose exec mysql bash
+    docker-compose exec --user=laradock workspace bash
+    docker-compose exec --user=laradock mysql bash
+    docker-compose build nginx mysql php-fpm workspace redis
+    docker-compose up -d nginx mysql php-fpm workspace redis
+    docker-compose start/stop
+    ```
+
+2. commands
+
+    ```batch
+    composer create-project laravel/laravel name_project
+    php artisan make:controller Api\Controller name_controller (--api)
+    php artisan make:model name_model
+    php artisan make:migration create_book_table
+    php artisan make:factory name_factory
+    php artisan make:seed name_seed
+    php artisan db:seed --class=name_seed
+    php artisan migrate
+    php artisan migrate:fresh
+    php artisan migrate:rollback
+    ```
