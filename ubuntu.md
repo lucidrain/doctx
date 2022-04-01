@@ -22,3 +22,6 @@ sudo apt-get install php7.0
 ```bash
 
 ```
+
+Screencastify - Screen Video Recorder
+Loom - Free Screen and Cam Recorder

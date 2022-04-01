@@ -3,21 +3,25 @@
 ## Examples
 
 create local repository
-`git init`
+```
+git init
+```
 
-> link your local repository and remote repository
->
-> `git remote add origin url_remote_git`
+link your local repository and remote repository
+```
+git remote add origin url_remote_git
+```
 
-> pull code from remote
->
-> `git pull origin name_branch`
+pull code from remote
+```
+git pull origin name_branch
+```
 
-> push code
->
-> `git push origin branch_name`
->
-> `git push --set-upstream origin branch_name` - gitLab
+push code
+```
+git push origin branch_name
+```
+`git push --set-upstream origin branch_name` - gitLab
 
 > create new branch
 >
