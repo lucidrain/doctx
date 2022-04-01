@@ -267,10 +267,10 @@
 
 [to the top](#to-the-top)
 
-- generate personal access token:
-- go toSettings/ Developer Settings/ Personal Access Token
-- generate New Token (Give your password) => Fillup the form => click Generate token
-- copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta, token = password
+- [] generate personal access token:
+- [x] go toSettings/ Developer Settings/ Personal Access Token
+- [x] generate New Token (Give your password) => Fillup the form => click Generate token
+- [x] copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta, token = password
 
 1. commands
 
@@ -323,7 +323,7 @@
     ```diff
     ssh -v
     ssh-keygen -t rsa -b 2048 -c user@gmail.com
-    > store in .ssh/github_personal.pub
+    > github/ settings/ ssh and gpg keys -> new ssh key -> copy ssh store in .ssh/github_personal.pub
     ```
 
 ## mysql
