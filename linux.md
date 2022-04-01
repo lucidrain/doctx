@@ -62,6 +62,7 @@ _.bashrc_ config terminal (run bash script with alias, set go_path, config color
 - c+o open file
 - c+p print page
 - c+w remove tab
+
 - c+shift+b open bookmark bar
 - c+shift+c open element tab
 - c+shift+d bookmark all tab
