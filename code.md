@@ -87,6 +87,22 @@
 
 [to the top](#to-the-top)
 
+1. extensions:
+
+    | theme                              | description         | memory                             | description            |
+    | :--------------------------------- | :------------------ | :--------------------------------- | :--------------------- |
+    | `Material Theme`              | check os            | `free -m`                          | check total            |
+    | `Material Theme Icons`           | check ip            | `df -h`                            | check detail file      |
+    | `Dracula Official`                | shutdown            | `sudo apt-get clean`               | clean                  |
+    | `One Dark Pro`                      | restart             | `sudo apt-get autoremove`          | autoremove             |
+    | `vscode-icons`                | list file in trash  | `journalctl --disk-usage`          | check log ubuntu       |
+    | theme                              | description         | memory                             | description            |
+    | :--------------------------------- | :------------------ | :--------------------------------- | :--------------------- |
+    | `sudo ./` \|\|`sh`\|\|`bash` fi.sh | run sh file         | `du -sh` *~/.cache/thumbnails*     | clear thumbnails cache |
+    | `chmod +x` fi.sh                   | give excute sh file |                                    |                        |
+    | `chown group_user:user project`    | update user folder  |                                    |                        |
+    | `ll`                               | show privilege files|                                    |                        |
+
 ## browser
 
 [to the top](#to-the-top)
@@ -143,13 +159,13 @@
 
 1. install
 
-    ```batch
+    ```diff
     sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
     ```
 
 2. commands
 
-    ```batch
+    ```diff
     > action with database
     show databse;
     select database_name;
@@ -174,7 +190,7 @@
     - config .env: php_version, composer_version, node_version, mysql_port
     - config nginx/sites/laravel_example.conf
 
-    ```json
+    ```diff
     kurazushi.conf
     server kurazushi.local
     path: var/www/canly-kurazushi/public
@@ -186,7 +202,7 @@
     - copy file.sql to ==mysql/docker-entrypoint-initdb.d== then import database
     - commands
 
-    ```batch
+    ```diff
     docker-compose exec mysql bash
     docker-compose exec --user=laradock workspace bash
     docker-compose exec --user=laradock mysql bash
@@ -195,9 +211,11 @@
     docker-compose start/stop
     ```
 
+    - localhost:8081/phpmyadmin/ mysql/root/root
+
 2. commands
 
-    ```batch
+    ```diff
     composer create-project laravel/laravel name_project
     php artisan make:controller Api\Controller name_controller (--api)
     php artisan make:model name_model
