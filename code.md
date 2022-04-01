@@ -267,7 +267,7 @@
 
 [to the top](#to-the-top)
 
-- [] generate personal access token:
+- [ ] generate personal access token:
 - [x] go toSettings/ Developer Settings/ Personal Access Token
 - [x] generate New Token (Give your password) => Fillup the form => click Generate token
 - [x] copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta, token = password
@@ -322,7 +322,14 @@
 
     ```diff
     ssh -v
+    > generate key ssh
     ssh-keygen -t rsa -b 2048 -c user@gmail.com
+    > generate key rsa
+    ssh-keygen -t ed25519 -c <comment>
+    > generate ssh key pair
+    ssh-keygen -p -f /path/to/ssh_key
+    - add ssh key to gitlab account
+    xclip -sel clip < ~/.ssh/id_ed25519.pub
     > github/ settings/ ssh and gpg keys -> new ssh key -> copy ssh store in .ssh/github_personal.pub
     ```
 
