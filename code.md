@@ -89,19 +89,21 @@
 
 1. extensions:
 
-    | theme                              | description         | memory                             | description            |
-    | :--------------------------------- | :------------------ | :--------------------------------- | :--------------------- |
-    | `Material Theme`              | check os            | `free -m`                          | check total            |
-    | `Material Theme Icons`           | check ip            | `df -h`                            | check detail file      |
-    | `Dracula Official`                | shutdown            | `sudo apt-get clean`               | clean                  |
-    | `One Dark Pro`                      | restart             | `sudo apt-get autoremove`          | autoremove             |
-    | `vscode-icons`                | list file in trash  | `journalctl --disk-usage`          | check log ubuntu       |
-    | theme                              | description         | memory                             | description            |
-    | :--------------------------------- | :------------------ | :--------------------------------- | :--------------------- |
-    | `sudo ./` \|\|`sh`\|\|`bash` fi.sh | run sh file         | `du -sh` *~/.cache/thumbnails*     | clear thumbnails cache |
-    | `chmod +x` fi.sh                   | give excute sh file |                                    |                        |
-    | `chown group_user:user project`    | update user folder  |                                    |                        |
-    | `ll`                               | show privilege files|                                    |                        |
+    ```json
+    {
+        "theme": {
+            "Material Theme",
+            "Material Theme Icons",
+            "Dracula Official",
+            "One Dark Pro",
+            "vscode-icons"
+        },
+        "color_code": {
+            "Bracket Pair Colorizer",
+            "indent-rainbow"
+        }
+    }
+    ```
 
 ## browser
 
