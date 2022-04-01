@@ -64,12 +64,12 @@ sudo apt-get install php7.0
 > choose default terminal
 sudo update-alternatives --config x-terminal-emulator
 > list all wine file installed
-apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine[^1]
+apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine
 ```
 
 6. applications
 
-- wine[^1]: running exe file
+- wine: running exe file
 - flameshot: screenshot
 - keepass2: store username & password
 - mysql workbench
@@ -78,7 +78,9 @@ apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine[^1]
 
 ## browser
 
-1. chrome short_key
+1. chrome
+
+- short_key:
 
 | chrome **c=ctrl** | description         | short_key           | description                         |
 | :-----------------| :------------------ | :-------------------| :-----------------------------------|
@@ -96,6 +98,11 @@ apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine[^1]
 | `c+o`             | open file           |
 | `c+p`             | print page          |
 | `c+w`             | remove tab          |
+
+- extension:
+    / trello card counter
+    / Loom – Free Screen and Cam Recorder
+    / Screencastify - Screen Video Recorder
 
 ## git
 
