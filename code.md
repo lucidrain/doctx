@@ -101,8 +101,122 @@
         "color_code": {
             "Bracket Pair Colorizer",
             "indent-rainbow"
+        },
+        "format_code": {
+            "Prettier - Code formatter",
+            "phpfmt"
+        },
+        "css_support": {
+            "CSS Peek",
+            "HTML CSS support",
+            "Live Server",
+            "Live Sass Complier"
+        },
+        "code_support": {
+            "bookmarks",
+            "Import Cost",
+            "Code Spell Checker",
+            "Emmet",
+            "Visual Studio IntelliCode",
+            "TabNine",
+            "Kite AutoComplete AI",
+            "setting syns"
+            "Path Intellisense",
+            "Auto Close Tag",
+            "Auto Rename Tag",
+            "Auto Import",
+            "Close HTML/XML tag"
+        },
+        "other_program": {
+            "Vim",
+            "Docker",
+            "GitLens",
+            "Git History": "temp delete commit: ctrl+shift+p 'zen'",
+            "Composer",
+            "REST Client",
+            "thunder_client",
+            "npm Intellisense",
+            "PHP Constructor",
+            "PHP Getters & Setters",
+            "PHP namespace resolve",
+            "PHP IntelliSense",
+            "PHP Intelephense",
+            "Laravel Artisan",
+            "DotENV": "Shift+ Ctrl + n, run js file (angular)",
+            "Vetur",
+            "Javascript and TypeScript Nightly",
+            "go": "View -> Command Pallete or type Ctrl+Shift+P and type goinstall update/tools",
+            "Flutter",
+            "Getx Snippets",
+            "Dart",
+            "Code Runner"
         }
     }
+    ```
+
+2. setting_json
+
+    ```json
+    {
+        "editor.fontFamily": "Fira Code",
+        "editor.fontLigatures": true,
+        "editor.formatOnSave": true,
+        "workbench.startupEditor": "welcomePage",
+        "workbench.colorTheme": "One Dark Pro",
+        "workbench.colorCustomizations": {
+            "editor.foreground": "#a9aab1"
+        },
+        "editor.fontFamily": "Fira Code",
+        "editor.fontLigatures": true,
+        "materialTheme.accent": "Remove accents",
+        "files.autoSave": "afterDelay",
+        "workbench.iconTheme": "vscode-icons",
+        "workbench.editor.enablePreview": false,
+    }
+    ```
+
+3. keybindings.json: (locate at:~/.config/Code/User/keybindings.json)
+
+    ```json
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly" 
+    }
+    ```
+
+4. configure user snippets
+
+    - File-->Preferences-->User snippets
+    - Select New Global Snippets file
+    - Save it as global.code-snippets (or name it anything with the extention code-snippets)
+    - Remove everything then paste this in:
+
+    ```json
+    {
+        "Var_Dump": {
+        "prefix": "vd",
+        "scope": "php",
+        "body": [ "var_dump($1);","$2" ],
+        "description": "var_dump"}
+    }
+    ```
+
+5. extends: nvim
+
+    - [.config/nvim] setting init.vim
+
+    ```diff
+    sudo apt install vim
+    sudo apt install nvim
+    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    nvim
+    :q
     ```
 
 ## browser

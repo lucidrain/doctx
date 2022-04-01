@@ -1,84 +1,11 @@
-# VS_CODE_EXT
-**theme**
-Material Theme
-Material Theme Icons
-Dracula Official
-One Dark Pro
-vscode-icons
----
-**color_code**
-Bracket Pair Colorizer
-indent-rainbow
----
-**format_code**
-Prettier - Code formatter
-phpfmt
----
-**css_support**
-CSS Peek
-HTML CSS support
-Live Server
-Live Sass Complier
----
-**code_support**
-bookmarks
-Import Cost
-Code Spell Checker
-Emmet
----
-**other_program**
-setting syns
-REST Client
-thunder_client
-Vim
-Docker
-Composer                             
-GitLens
-Git History
-"temp delete commit: "ctrl+shift+p 'zen' "
-Kite AutoComplete AI
----
-**auto_type**
-Path Intellisense
-npm Intellisense
-Auto Close Tag
-Auto Rename Tag
-Auto Import
-Close HTML/XML tag
-PHP Constructor
-PHP Getters & Setters
-PHP IntelliSense
-PHP Intelephense
-PHP namespace resolve
-Laravel Artisan
-Vetur
-Javascript and TypeScript Nightly
-DotENV      Shift+ Ctrl + n, run js file (angular)
-go          View -> Command Pallete or type Ctrl+Shift+P and type goinstall update/tools.
-Flutter
-Getx Snippets
-Dart
-Code Runner
----
-**ai_support_type**
-Visual Studio IntelliCode
-TabNine
----
+
 # SETTING_JSON
 <pre><code>
 {"editor.fontFamily": "Fira Code",
 // change looking merge symbol   
 "editor.fontLigatures": true,},{   
 "workbench.colorTheme": "One Dark Pro",
-"workbench.colorCustomizations": {
-// set text color in .txt file
-"editor.foreground": "#a9aab1"},
-"editor.fontFamily": "Fira Code",
-"editor.fontLigatures": true,
-"materialTheme.accent": "Remove accents",
-"files.autoSave": "afterDelay",
-"workbench.iconTheme": "vscode-icons",
-"workbench.editor.enablePreview": false,
+
 // Set the default
 "editor.formatOnSave": true,
 //Experimental support for decorators is a feature that is subject to change in a future release.
