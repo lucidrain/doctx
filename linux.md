@@ -6,61 +6,14 @@
 
 ## linux_command
 
-| linux                              | description         | memory                             | description            |
-| :--------------------------------- | :------------------ | :--------------------------------- | :--------------------- |
-| `cat /etc/os-release`              | check os            | `free -m`                          | check total            |
-| `ifconfig`                         | check ip            | `df -h`                            | check detail file      |
-| `sudo shutdown now`                | shutdown            | `sudo apt-get clean`               | clean                  |
-| `sudo reboot`                      | restart             | `sudo apt-get autoremove`          | autoremove             |
-| `gio list trash://`                | list file in trash  | `journalctl --disk-usage`          | check log ubuntu       |
-| `gio trash [file or dir]`          | move file to trash  | `sudo journalctl --vacuum-time=3d` | clean log 3 days ago   |
-| `gio trash --empty`                | clean trash         | `du -h` _/var/lib/snapd/snaps_     | check snap space       |
-| `sudo ./` \|\|`sh`\|\|`bash` fi.sh | run sh file         | `du -sh` _~/.cache/thumbnails_     | clear thumbnails cache |
-| `chmod +x` fi.sh                   | give excute sh file |                                    |                        |
-| `chown group_user:user project`    | update user folder  |                                    |                        |
-| `ll`                               | show privilege files|                                    |                        |
+
 
 - choose default terminal
 
-```bash
-sudo update-alternatives --config x-terminal-emulator
-```
 
-- install gnome-terminal
 
-```bash
-sudo apt install gnome-terminal
-```
 
-- linux short_key:
 
-> minimize left || right
->
-> super + ->|| <-
-
-> maximize screen
->
-> super + arrow_up
-
-> minimize screen
->
-> super + arrow_down
-
-> open applets
->
-> super + a
-
-> open notification
->
-> super + n
-
-> change unikey language
->
-> super + space
-
-> switch between workspace
->
-> ctrl + alt + ->
 
 # config_file
 
@@ -75,7 +28,7 @@ _.bashrc_ config terminal (run bash script with alias, set go_path, config color
 - keepass2
 - wine (install & use file .exe)
 ```
-apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine
+
 ```
 
 # chrome_ext
