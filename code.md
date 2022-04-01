@@ -13,6 +13,7 @@
 [to the top](#to-the-top)
 
 1. file_command
+
 | file = fi                       | description      | folder = fd           | description                        |
 | :------------------------------ | :--------------- | :-------------------- | :--------------------------------- |
 | `cp`                            | copy             | `xdg-open` fd_name    | open                               |
@@ -24,6 +25,7 @@
 | `sudo chmod a+rwx` path/fi_name | change privilege | `sudo chmod -r 777 .` | give all privilege                 |
 
 2. linux_command
+
 | linux                              | description         | memory                             | description            |
 | :--------------------------------- | :------------------ | :--------------------------------- | :--------------------- |
 | `cat /etc/os-release`              | check os            | `free -m`                          | check total            |
@@ -39,6 +41,7 @@
 | `ll`                               | show privilege files|                                    |                        |
 
 3. short_key
+
 | linux                              | description         | short_key                          | description            |
 | :--------------------------------- | :------------------ | :--------------------------------- | :--------------------- |
 | `super + arrow_left | arrow_right` | separate window     | `super + space`                    | change language        |
@@ -76,6 +79,7 @@ apt list --installed | sed -E 's|(._)/._|\1|' | grep -i wine[^1]
 ## browser
 
 1. chrome short_key
+
 | chrome **c=ctrl** | description         | short_key           | description                         |
 | :-----------------| :------------------ | :-------------------| :-----------------------------------|
 | `c+a`             | select all words    | `c+shift+b`         | open bookmark bar                   |
